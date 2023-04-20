@@ -1,0 +1,192 @@
+.grid-container {
+    display: grid;
+    grid-template-rows: 0.1fr 3fr  2fr;
+    grid-template-columns: 10fr 2fr 12fr  ;
+    grid-gap: 1px;
+    grid-template-areas:
+    "areaheader areaheader areaheader"
+    "imgarea areainformation areaoffert "
+    "detailarea detailarea  areadesc"
+  }
+  .grid-description{
+    grid-area: areadesc;
+  }
+  .grid-detail{
+    grid-area: detailarea;
+  }
+  .grid-hder {
+    
+      background-color: #0d1149;
+      border-radius: 15px;
+      grid-area: areaheader;
+   
+  }  
+ .grid-image{
+    grid-area: imgarea;
+   }
+ .grid-information{
+    grid-area: areainformation;
+   }
+ .grid-offert{
+  grid-area: areaoffert;
+ }
+      .detail{
+        border-radius: 12px;
+        height: 200px;
+        margin: 5%;
+        margin-left: 6%;
+        width: 150px;
+      }
+      h1{
+        color: #0e3157;
+        margin-top: 35%;
+        }
+     .headertip{
+          height: 100px;
+          margin-left: 10%;
+          width: 100px;
+                 }
+      .headertipon{
+       
+        border-radius: 15%;
+        margin-left: 10%;
+        margin-top: 1%;
+        height: 100px;
+        width: 100px;
+                }
+      .logo{
+        height: 100px;
+        margin-left: 1em;
+        width: 100px;
+                  }
+      .img{
+        border-radius: 12%;
+        height: 350px;
+        margin-left: 20%;
+        margin-top: 5%;
+        width: 200px;
+      }
+      .information{
+        margin-left: 10%;
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+      }
+      .informationgeneral{
+        font-family:Georgia, 'Times New Roman', Times, serif;
+        font-weight: 700;
+        margin-left: 10%;
+        margin-right: 10%;
+        text-align: justify;
+      }
+      .offert{
+        width: 400px;
+        height: 200px;
+        margin-left: 12%;
+        margin-top: 10%;
+      }
+      table{
+        border-collapse: separate;
+        border-spacing: 20px 5px;
+        margin-bottom: 6%;
+        border-color: #0e3157;
+        border-style: double;
+        border-radius: 12px;
+        }
+        @media (max-width: 600px) {
+          .grid-container {
+            display: grid;
+            grid-template-rows: 0.1fr 3fr  2fr;
+            grid-template-columns: 10fr 10fr  ;
+            grid-gap: 1px;
+            grid-template-areas:
+            "areaheader areaheader"
+            "areainformation areainformation"
+            "imgarea imgarea"
+            "detailarea detailarea"
+            "areadesc areaoffert "
+            
+          }
+          .grid-description{
+            grid-area: areadesc;
+          }
+          .grid-detail{
+            grid-area: detailarea;
+          }
+          .grid-hder {
+            background-color: #0d1149;
+            border-radius: 15px;
+            display: flex;
+            grid-area: areaheader;
+            position: fixed;
+            width: 95%;
+            z-index: 1;
+          }  
+         .grid-image{
+            grid-area: imgarea;
+           }
+         .grid-information{
+            grid-area: areainformation;
+           }
+         .grid-offert{
+          grid-area: areaoffert;
+         }
+         .detail{
+          border-radius: 12px;
+          height: 100px;
+          margin: 5%;
+          margin-left: 6%;
+          width: 80px;
+        }
+        .headertip{
+          height: 70px;
+          margin-left: 40%;
+          margin-top: 15%;
+          margin-bottom: 3%;
+          width: 70px;
+                 }
+       
+       .headertipon{
+       height: 70px;
+       margin-left: 30%;
+       margin-top: 15%;
+       margin-bottom: 3%;
+       width: 70px;
+         }
+         .logo{
+          height: 70px;
+          margin-top: 3%;
+          margin-bottom: 3%;
+          width: 70px;
+                    }
+        .img{
+          border-radius: 12%;
+          height: 200px;
+          margin-left: 15%;
+          margin-top: 5%;
+          width: 300px;
+        }
+        .information{
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-weight: 700;
+        }
+        .informationgeneral{
+          font-family:Georgia, 'Times New Roman', Times, serif;
+          font-weight: 500;
+          margin-left: 10%;
+          margin-right: 10%;
+          text-align: justify;
+        }
+        .offert{
+          height: 100px;
+          margin-left: 12%;
+          width: 200px;
+        }
+        table{
+          border-collapse: separate;
+          border-spacing: 20px 5px;
+          border-color: #0d1149;
+          border-style: double;
+          border-radius: 12px;
+          margin-bottom: 6%;
+          }
+        }

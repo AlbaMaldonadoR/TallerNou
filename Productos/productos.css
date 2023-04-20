@@ -1,0 +1,185 @@
+.grid-container {
+   display: grid;
+   grid-template-rows: 4fr 20fr 4fr;
+   grid-template-columns: 20fr 20fr 20fr  ;
+   grid-gap: 1px;
+   grid-template-areas:
+   "areaheader areaheader areaheader "
+   "areajarrones areavajillas areaotros"
+   "areafooter  areafooter areafooter "
+   
+ }
+.grid-hder {
+   background-color: #0d1149;
+   border-radius: 15px;
+   grid-area: areaheader;
+}
+.grid-jarrones{
+   background: var(--card-header-color);
+   border-radius: 20px 20px 0px 0px;
+   grid-area: areajarrones;            
+   margin: -20px;
+   padding: 20px;  
+}
+.grid-otros{
+   background: var(--card-header-color);
+   border-radius: 20px 20px 0px 0px;
+   grid-area: areaotros;            
+   margin: -20px;
+   padding: 20px; 
+  
+}
+.grid-vajillas{
+   background: var(--card-header-color);
+   border-radius: 20px 20px 0px 0px;
+   grid-area: areavajillas;            
+   margin: -20px;
+   padding: 20px;  
+}
+
+.link{
+   border-radius: 5px;
+   border: 1px solid white;
+   color: white;
+   font-family: Georgia, 'Times New Roman', Times, serif;
+   margin: 2px;
+   padding: 8px;
+   text-align: center;
+   text-decoration: none;
+   width: 100%;
+}
+
+.card{
+    background: #8C91C4;
+    box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+    border-radius: 20px;
+    color:#ecdabf;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-left: 15%;
+    margin-top: 10%;
+    padding: 20px;
+    width: 300px;            
+}
+.card-body{
+    background:#0d1149;
+    margin: -20px;
+    padding: 20px;
+    border-radius: 00px 00px 20px 20px;
+}
+.card-footer{
+    background: #0d1149;
+    margin: -20px;
+    padding: 20px;
+    border-radius: 00px 00px 20px 20px;
+    display: flex;
+    justify-content: space-between
+}
+.headertip{
+   height: 100px;
+   margin-left: 10%;
+   width: 100px;
+          }
+ .headertipon{
+ border-radius: 15%;
+ height: 100px;
+ margin-left: 10%;
+ margin-top: 1%;
+ width: 200px;
+ }
+
+img{
+   align-items: center;
+   height: 300px;
+   width: 200px;
+   margin-left: 15%;
+}
+
+ .logo{
+  height: 100px;
+  margin-left: 1em;
+  width: 100px;
+            }
+            @media (max-width: 800px) {
+ 
+               .grid-container {
+                 display: grid;
+                 grid-template-rows: 3fr 3fr 3fr 1fr ;
+                 grid-template-columns: 10fr ;
+                 grid-gap: 1px;
+                 grid-template-areas:
+                 "areajarrones"
+                 "areavajillas"
+                 "areaotros"
+                 "areafooter "
+                 
+                
+                 }
+                 .grid-hder {
+                   background-color: #0d1149;
+                   border-radius: 15px;
+                   display: flex;
+                   grid-area: areaheader;
+                   position: fixed;
+                   width: 95%;
+                   z-index: 1;
+                }
+                .grid-jarrones{
+                  background: var(--card-header-color);
+                  border-radius: 20px 20px 0px 0px;
+                  grid-area: areajarrones;            
+                  margin: -20px;
+                  padding: 20px;  
+               }
+               .grid-otros{
+                  background: var(--card-header-color);
+                  border-radius: 20px 20px 0px 0px;
+                  grid-area: areaotros;            
+                  margin: -20px;
+                  padding: 20px;  
+               }
+               .grid-vajillas{
+                  background: var(--card-header-color);
+                  border-radius: 20px 20px 0px 0px;
+                  grid-area: areavajillas;            
+                  margin: -20px;
+                  padding: 20px;  
+               }
+               .card{
+                  background: #8C91C4;
+                  box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.377);
+                  border-radius: 20px;
+                  color:#ecdabf;
+                  font-family: Georgia, 'Times New Roman', Times, serif;
+                  margin-left: 15%;
+                  margin-top: 22%;
+                  padding: 20px;
+                  width: 300px;            
+              }
+                .headertip{
+                  margin-left: 30%;
+                  margin-top: 15%;
+                  margin-bottom: 3%;
+                  height: 70px;
+                  width: 70px;
+                         }
+               
+               .headertipon{
+                margin-left: 30%;
+                margin-top: 15%;
+                margin-bottom: 3%;
+                height: 70px;
+                width: 70px;
+                 }
+              img{
+               align-items: center;
+               margin-left: 30%;
+               height: 200px;
+               width: 100px;
+              }
+              .logo{
+                height: 70px;
+                margin-top: 3%;
+                margin-bottom: 3%;
+                width: 70px;
+                         }
+               }
